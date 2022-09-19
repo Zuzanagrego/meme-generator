@@ -1,11 +1,12 @@
 import "./App.css";
+import memesData from "./memesData";
 
 function App() {
   function displayText() {
     console.log("Hover");
   }
   function handleClick() {
-    console.log("I was clicked");
+    console.log(memesData.data.memes[Math.round(Math.random() * 100)].url);
   }
 
   return (
