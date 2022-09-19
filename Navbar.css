@@ -1,0 +1,9 @@
+h2 {
+  background: linear-gradient(0.25turn, #5b008c, #cc00ff);
+  color: #fff;
+  max-width: 100%;
+  margin: 0;
+  padding: 2vh 2vw;
+  flex-wrap: nowrap;
+  margin-bottom: 50px;
+}

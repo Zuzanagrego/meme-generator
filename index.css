@@ -1,0 +1,9 @@
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100%;
+  max-width: 100%;
+}
