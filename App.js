@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import memesData from "./memesData";
 
@@ -8,6 +9,9 @@ function App() {
   function handleClick() {
     console.log(memesData.data.memes[Math.round(Math.random() * 100)].url);
   }
+
+  const [memeImage, setMemeImage] = React.useState("");
+  function getMemeImage() {}
 
   return (
     <div className="App">
