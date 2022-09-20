@@ -6,12 +6,11 @@ function App() {
   function displayText() {
     console.log("Hover");
   }
-  function handleClick() {
-    console.log(memesData.data.memes[Math.round(Math.random() * 100)].url);
-  }
 
   const [memeImage, setMemeImage] = React.useState("");
-  function getMemeImage() {}
+  function getMemeImage() {
+    setMemeImage(memesData.data.memes[Math.round(Math.random() * 100)].url);
+  }
 
   return (
     <div className="App">
@@ -21,12 +20,12 @@ function App() {
           <input placeholder="Bottom text" type="text"></input>
         </div>
         <div className="button-holder holder">
-          <button onClick={handleClick}>Get a new meme image</button>
+          <button onClick={getMemeImage}>Get a new meme image</button>
         </div>
       </div>
 
       <div onMouseOver={displayText} className="image-holder holder">
-        <img></img>
+        <img src={memeImage} />
       </div>
     </div>
   );
