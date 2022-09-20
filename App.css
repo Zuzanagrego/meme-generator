@@ -7,6 +7,7 @@
   margin: 20px auto;
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .input-fields-holder {
@@ -25,10 +26,6 @@ input:focus {
   outline: none;
 }
 
-.button-holder {
-  justify-content: center;
-}
-
 button {
   background: linear-gradient(0.25turn, #5b008c, #cc00ff);
   border: none;
@@ -41,7 +38,6 @@ button:hover {
   cursor: pointer;
 }
 
-.image-holder {
-  background-color: #5b008c;
-  height: 300px;
+.image-holder img {
+  max-width: 600px;
 }
